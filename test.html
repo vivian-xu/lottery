@@ -20,6 +20,7 @@
     border-width:1px;
     border-color:#000000;
     width:100%;
+    border-left:2px solid #000 ;
 }
 
 .outside-table table{
@@ -36,9 +37,11 @@
     height:25px;
     line-height:25px;
     text-align:center;
+    color:#C0C0C0;
     border-style:solid none none solid;
     border-width:1px;
-    border-color:#000000;
+    border-color:#BABBB7;
+
 }
 
 .outside-table tr th{
@@ -51,18 +54,24 @@
 
 .Col1 {
 background:#d8d8ee; 
-color: #f5f5f5;
 }
 
 .Col2 {
 background:#7f7f9c; 
 color:#fc0;
-color:#fc0 ;
 font-size:18px;
 }
 
 .Col3 {
 background: #f5f5f5; 
+}
+
+.Col4 {
+background: rgba(184,243,85,0.3);
+}
+
+.outside-table td:nth-of-type(27n+1) {
+color:#000;
 }
 
 .outside-table td:nth-of-type(27n+2) {
@@ -80,20 +89,32 @@ color:#fc0;
 font-size:18px;
 }
 
+tr:nth-child(even) 
+{
+background: rgba(144,144,144,0.15);
+}
+
+tr:nth-child(odd) 
+{
+background: rgba(255,255,255,0.15);
+}
+
 .point {
-color:#00FFFF;
+color:#00FFFF !important;
 font-size:21px;
 background-color:#6495ED; 
 font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
 font-weight:bold;
+
 }
 
 .point_r {
-color:#DC143C;
+color:#DC143C !important;
 font-size:21px;
 font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
 font-weight:bold;
 background-color:#F5DEB3;
+}
 </style>
 
 <!--[if lt IE 9]>
@@ -111,7 +132,7 @@ background-color:#F5DEB3;
 <div class="container">
          <table  width=100% class="outside-table">
             <col class="Col1" /> 
-            <col class="Col2" color="#fc0" /> 
+            <col class="Col2" /> 
             <col class="Col2" /> 
             <col class="Col2" /> 
             <col class="Col3" /> 
