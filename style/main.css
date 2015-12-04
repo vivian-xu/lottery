@@ -1,0 +1,126 @@
+body,td {
+    margin: 0;
+    padding: 0;
+}
+td{
+    height:25px;
+    line-height:25px;
+}
+
+/* nav */
+.top-nav {
+    margin: 10px 10px 30px ;
+}
+.main-nav {
+    float:left
+}
+
+.si-nav {
+    float:right;
+}
+/* 也可以在.top-nav里加入overflow:hidden来达到同样的效果 */
+
+.clearfix:before,.clearfix:after{
+    content:" ";
+    display:table;
+}
+
+.clearfix:after {
+    clear:both;
+}
+
+
+/* table */
+.outside-table{
+    width:100%;
+    margin-top: 20px;
+    border-collapse:collapse;
+    border-spacing:0px;
+    border:1px solid #000;
+    overflow-y: auto;
+    _overflow: auto;
+
+}
+
+.outside-table td{
+    color:#C0C0C0;
+}
+
+.outside-table td, .outside-table tr th{
+    text-align:center;
+    border: 1px #666666; 
+    border-style: solid none none solid;
+}
+
+.outside-table tr th,
+.Col1 {
+    background:#d8d8ee; 
+}
+
+.Col2 {
+    background:#7f7f9c; 
+    color:#fc0;
+    font-size:18px;
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+
+.Col3 {
+background: #f5f5f5; 
+}
+
+.Col4 {
+background: rgba(184,243,85,0.3);
+}
+
+.outside-table td:nth-of-type(27n+1) {
+    color:#000;
+}
+
+.outside-table td:nth-of-type(27n+3),
+.outside-table td:nth-of-type(27n+4), 
+.outside-table td:nth-of-type(27n+2) {
+    color:#fc0;
+    font-size:18px;
+}
+
+.outside-table td:nth-of-type(27n+25),
+.outside-table td:nth-of-type(27n-1),
+.outside-table td:nth-of-type(27n) {
+    color:#000;
+}
+
+tr:nth-child(even) {
+    background: rgba(144,144,144,0.15);
+}
+
+tr:nth-child(odd) {
+    background: rgba(255,255,255,0.15);
+}
+
+tr:hover{
+    background-color:#4169E1; 
+}
+.point, .point_r {
+    font-size:21px;
+    font-weight:bold;
+    font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+
+}
+
+.point {
+    color:#00FFFF !important;
+    background-color:#6495ED; 
+
+}
+
+.point_r {
+    color:#DC143C !important;
+    background-color:#F5DEB3;
+}
+
+
+
